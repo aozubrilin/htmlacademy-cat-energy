@@ -29,10 +29,108 @@
     </nav>
   </header>
 
-  <main class="inner-page"></main>
+  <main class="inner-page">
+    <section class="selection-program">
+      <div class="selection-program__wrapper">
+
+        <h1 class="selection-program__title">Подбор программы</h1>
+        <form action="https://echo.htmlacademy.ru" class="selection-program__form" method="GET">
+          <p class="selection-program__form-text">Заполните анкету и мы подберем программу питания для вашего кота</p>
+
+          <fieldset class="selection-program__form-block personal-data-block">
+            <p class="personal-data-block__item">
+              <label class="personal-data-block__label" for="name">Имя:<sup>*</sup></label>
+              <input class="personal-data-block__input" type="text" name="name" id="name" placeholder="Барсик">
+            </p>
+            <p class="personal-data-block__item">
+              <label class="personal-data-block__label" for="weight">Вес (кг):<sup>*</sup></label>
+              <input class="personal-data-block__input" type="number" name="weight" id="weight" placeholder="7">
+            </p>
+            <p class="personal-data-block__item">
+              <label class="personal-data-block__label" for="age">Возраст (лет):</label>
+              <input class="personal-data-block__input" type="number" name="age" id="age" placeholder="7">
+            </p>
+          </fieldset>
+
+          <fieldset class="selection-program__form-block programs-block">
+            <ul class="programs-block__list">
+              <li class="programs-block__item">
+                <input class="programs-block__radio" type="radio" name="select-program" value="mass-loss"
+                  id="program-mass-loss" checked>
+                <label class="programs-block__label" for="program-mass-loss">Похудение</label>
+              </li>
+              <li class="programs-block__item">
+                <input class="programs-block__radio" type="radio" name="select-program" value="mass-gain"
+                  id="program-mass-gain">
+                <label class="programs-block__label" for="program-mass-gain">Набор массы</label>
+              </li>
+              <li class="programs-block__item">
+                <input class="programs-block__radio" type="radio" name="select-program" value="your-advice"
+                  id="program-your-advice">
+                <label class="programs-block__label" for="program-your-advice">Не знаю (Нужен ваш совет)</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="selection-program__form-block contacts-data-block">
+            <legend class="contacts-data-block__legend">Контактные данные (владельца кота)</legend>
+            <p class="contacts-data-block__item">
+              <label class="contacts-data-block__label" for="email">E-mail:<sup>*</sup></label>
+              <input class="contacts-data-block__input contacts-data-block__input--email" type="email" name="email"
+                id="email" placeholder="kuklachev@gmail.com">
+            </p>
+            <p class="contacts-data-block__item">
+              <label class="contacts-data-block__label" for="email">E-mail:<sup>*</sup></label>
+              <input class="contacts-data-block__input contacts-data-block__input--phone" type="tel" name="phone"
+                id="phone" placeholder="8 (960) 900-60-90">
+            </p>
+          </fieldset>
+
+          <fieldset class="selection-program__form-block comments-block">
+            <legend class="comments-block__legend">Комментарий</legend>
+            <textarea class="comments-block__textarea" name="text" id="text" cols="30" rows="6"
+              placeholder="Расскажите обо всех повадках кота"></textarea>
+          </fieldset>
+
+          <fieldset class="selection-program__form-block additional-block">
+            <ul class="additional-block__list">
+              <li class="additional-block__item">
+                <input class="additional-block__checkbox" type="checkbox" name="sweetener" id="sweetener" checked>
+                <label class="additional-block__label" for="sweetener">Сахарозаменитель</label>
+              </li>
+              <li class="additional-block__item">
+                <input class="additional-block__checkbox" type="checkbox" name="water" id="water">
+                <label class="additional-block__label" for="water">Питьевая вода</label>
+              </li>
+              <li class="additional-block__item">
+                <input class="additional-block__checkbox" type="checkbox" name="milk" id="milk">
+                <label class="additional-block__label" for="milk">Молоко</label>
+              </li>
+              <li class="additional-block__item">
+                <input class="additional-block__checkbox" type="checkbox" name="vitamins" id="vitamins">
+                <label class="additional-block__label" for="vitamins">Витамины</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <button class="selection-program__form-button button" type="submit">Отправить заявку</button>
+          <small class="selection-program__form__legend">
+            <sup>*</sup> — Обязательные поля
+          </small>
+        </form>
+      </div>
+
+    </section>
+  </main>
 
   <footer class="page-footer">
     <div class="page-footer__wrapper">
+      <div class="page-footer__block contacts">
+        <h2 class="contacts__title">приглашаем к сотрудничеству дилеров!</h2>
+        <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        <img src="#" class="contacts__map" width="320" height="400" alt="Карта нашего расположения">
+      </div>
+
       <div class="page-footer__block logo">
         <a href="index.html" class="logo__link">
           <img src="#" class="logo__link-image" width="128" height="24" alt="Логотип сайта CAT ENERGY">
