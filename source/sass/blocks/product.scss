@@ -1,0 +1,33 @@
+.product {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.product__title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: $second-font;
+  color: $color-title;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.product__button {
+  color: $main-color;
+  background-color: $decorate-color;
+  padding-top: 13px;
+  padding-bottom: 12px;
+  font-size: 16px;
+  line-height: 20px;
+
+  &:hover {
+    background-color: $btn-green-hvr;
+  }
+
+  &:active,
+  &:focus {
+    background-color: $btn-green-hvr;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}

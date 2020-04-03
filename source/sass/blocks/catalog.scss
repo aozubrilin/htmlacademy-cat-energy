@@ -1,0 +1,48 @@
+.catalog__wrapper {
+  @include container;
+}
+
+.catalog__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 60px;
+  font-family: $second-font;
+  color: $color-title;
+  font-style: normal;
+  background-color: $main-color;
+}
+
+.catalog__subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: $second-font;
+  color: $color-title;
+  font-style: normal;
+}
+
+.catalog__subtext {
+  font-size: 12px;
+  line-height: 16px;
+  font-family: $base-font;
+  color: $color-title;
+}
+
+.catalog__show-all-button {
+  color: $color-text;
+  background-color: $bg-color;
+  padding-top: 13px;
+  padding-bottom: 12px;
+  font-size: 16px;
+  line-height: 20px;
+
+  &:hover {
+    background-color: $btn-gray-hvr;
+  }
+
+  &:active,
+  &:focus {
+    background-color: $btn-gray-hvr;
+    color: $copyrigh-link-activ;
+  }
+}
