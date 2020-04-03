@@ -1,0 +1,19 @@
+.instruction__wrapper {
+  @include container;
+}
+
+.instruction__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 60px;
+  font-family: $second-font;
+  color: $color-title;
+}
+
+.instruction__list {
+  @include reset-list-style;
+}
+
+.instruction__item {
+  margin-bottom: 20px;
+}

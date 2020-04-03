@@ -1,0 +1,25 @@
+.site-list {
+  @include reset-list-style;
+  text-align: center;
+}
+
+.site-list__link {
+  font-family: $second-font;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: $color-link;
+  cursor: pointer;
+
+  &[href]:hover {
+    color: $link-hvr;
+  }
+
+  &[href]:focus {
+    color: $link-hvr;
+  }
+
+  &[href]:active {
+    color: $link-activ;
+  }
+}
