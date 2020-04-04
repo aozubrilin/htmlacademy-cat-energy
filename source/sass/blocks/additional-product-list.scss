@@ -1,0 +1,21 @@
+.additional-product-list {
+  @include reset-list-style;
+  margin-bottom: 39px;
+}
+
+.additional-product-list__title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  font-family: $second-font;
+  color: $color-lable;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.additional-product-list__quantity,
+.additional-product-list__price {
+  line-height: 14px;
+  color: $color-text;
+  font-style: normal;
+}

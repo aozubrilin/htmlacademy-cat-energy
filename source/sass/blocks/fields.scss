@@ -1,0 +1,44 @@
+.fields__block {
+  border: none;
+}
+
+.fields__title {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  font-family: $second-font;
+  color: $color-title;
+  font-style: normal;
+}
+
+.fields__label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  font-family: $second-font;
+  color: $color-lable;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.fields__input,
+.fields__textarea {
+  font-weight: 400;
+  font-size: 16px;
+  font-family: $second-font;
+  color: $color-text;
+  text-transform: uppercase;
+  border: solid 1px #cdcdcd;
+}
+
+.fields__program-list {
+  @include reset-list-style;
+}
+
+.fields__input {
+  padding-top: 15px;
+  padding-right: 14px;
+  padding-bottom: 14px;
+  padding-left: 16px;
+  border: solid 1px #cdcdcd;
+}

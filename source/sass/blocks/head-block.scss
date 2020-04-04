@@ -5,7 +5,7 @@
 }
 
 .head-block__wrapper {
-  @include container();
+  @include container;
   text-align: center;
   color: $main-color;
 }
