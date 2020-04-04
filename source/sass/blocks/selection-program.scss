@@ -1,0 +1,45 @@
+.selection-program__wrapper {
+  @include container;
+}
+
+.selection-program__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 60px;
+  font-family: $second-font;
+  color: $color-title;
+  font-style: normal;
+}
+
+.selection-program__form-text {
+  font-weight: 400;
+  font-family: $second-font;
+  color: $color-title;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.selection-program__form__legend {
+  line-height: 16px;
+  font-family: $base-font;
+  color: $color-text;
+}
+
+.selection-program__form-button {
+  color: $main-color;
+  background-color: $decorate-color;
+  padding-top: 13px;
+  padding-bottom: 12px;
+  font-size: 16px;
+  line-height: 20px;
+
+  &:hover {
+    background-color: $btn-green-hvr;
+  }
+
+  &:active,
+  &:focus {
+    background-color: $btn-green-hvr;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
