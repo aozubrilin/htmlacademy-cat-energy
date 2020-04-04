@@ -28,8 +28,17 @@
   font-family: $second-font;
   color: $color-text;
   text-transform: uppercase;
+  border: solid 1px #cdcdcd;
 }
 
 .fields__program-list {
   @include reset-list-style;
+}
+
+.fields__input {
+  padding-top: 15px;
+  padding-right: 14px;
+  padding-bottom: 14px;
+  padding-left: 16px;
+  border: solid 1px #cdcdcd;
 }
