@@ -1,3 +1,48 @@
-.page-header__wrapper {
-  @include container;
+.page-header__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-header__top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 65px;
+}
+
+.page-header__logo img {
+  display: block;
+  width: 191px;
+  height: 39px;
+}
+
+.page-header__toggle {
+  display: block;
+  width: 25px;
+  height: 19px;
+
+  cursor: pointer;
+  border: none;
+  padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .page-header__top {
+    min-height: 65px;
+  }
+
+  .page-header__toggle {
+    display: none;
+  }
+
+  .mian-nav {
+    display: block;
+  }
 }

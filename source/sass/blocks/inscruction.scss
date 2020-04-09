@@ -1,8 +1,10 @@
-.instruction__wrapper {
-  @include container;
+.instruction {
+  padding-bottom: 42px;
 }
 
 .instruction__title {
+  margin: 0;
+  padding-bottom: 35px;
   font-weight: 400;
   font-size: 36px;
   line-height: 60px;
@@ -16,4 +18,35 @@
 
 .instruction__item {
   margin-bottom: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .instruction__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .instruction__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .instruction__item {
+    width: 201px;
+    font-size: 16px;
+    line-height: 24px;
+
+    &--item-1,
+    &--item-3 {
+      margin-right: 183px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .instruction__item {
+    font-size: 16px;
+    line-height: 24px;
+    margin-right: 83px;
+  }
 }

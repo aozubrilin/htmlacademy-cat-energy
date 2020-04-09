@@ -1,5 +1,5 @@
-.programs__wrapper {
-  @include container;
+.programs {
+  padding-bottom: 32px;
 }
 
 .programs__list {
@@ -29,7 +29,9 @@
 
 .programs__description {
   margin: 0;
-  padding-bottom: 23px;
+  margin-bottom: 20px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid $border;
 }
 
 .programs__link {
@@ -42,5 +44,55 @@
   &:active,
   &:focus {
     color: $link-activ;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .programs__item {
+    margin-bottom: 30px;
+    padding: 80px 62px 62px 52px;
+  }
+
+  .programs__title {
+    padding-bottom: 26px;
+    font-size: 36px;
+    line-height: 37px;
+  }
+
+  .programs__description {
+    margin: 0;
+    padding-bottom: 61px;
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+  }
+
+  .programs__link {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programs__list {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .programs__item {
+    width: 570px;
+    margin: 0;
+    padding: 41px 56px 62px 52px;
+    box-sizing: border-box;
+  }
+
+  .programs__title {
+    text-align: center;
+  }
+
+  .programs__description {
+    margin: 0;
+    padding-bottom: 36px;
   }
 }

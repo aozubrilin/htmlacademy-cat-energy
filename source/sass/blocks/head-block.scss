@@ -1,16 +1,17 @@
 .head-block {
+  padding: 0;
+  padding-top: 29px;
+  padding-bottom: 22px;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center;
-}
-
-.head-block__wrapper {
-  @include container;
-  text-align: center;
+  background-position: center top;
   color: $main-color;
+  text-align: center;
 }
 
 .head-block__title {
+  margin: 0;
+  padding-bottom: 19px;
   font-size: 36px;
   font-weight: 400;
   line-height: 36px;
@@ -19,6 +20,8 @@
 }
 
 .head-block__text {
+  margin: 0;
+  padding-bottom: 29px;
   line-height: 14px;
   font-family: $second-font;
   text-transform: uppercase;
@@ -40,5 +43,61 @@
   &:focus {
     background-color: $btn-green-hvr;
     color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .head-block {
+    position: relative;
+    padding-bottom: 200px;
+    padding-left: 84px;
+    background: none;
+    color: $color-title;
+    text-align: left;
+  }
+
+  .head-block__title {
+    padding-bottom: 33px;
+    width: 415px;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+  }
+
+  .head-block__text {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .head-block__image {
+    position: absolute;
+    z-index: -1;
+    right: 45%;
+    top: 45%;
+  }
+
+  .head-block__button {
+    padding-top: 17px;
+    padding-bottom: 15px;
+    width: 190px;
+    font-style: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .head-block {
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 50%;
+    z-index: -1;
+  }
+
+  .head-block__image {
+    position: absolute;
+    z-index: -1;
+    left: 40%;
+    top: 45%;
   }
 }

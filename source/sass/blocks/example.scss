@@ -1,12 +1,12 @@
 .example {
   background-color: $bg-color;
-}
-
-.example__wrapper {
-  @include container;
+  padding-top: 33px;
+  padding-bottom: 38px;
 }
 
 .example__title {
+  margin: 0;
+  padding-bottom: 33px;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
@@ -14,11 +14,22 @@
   color: $color-title;
 }
 
+.example__text {
+  margin: 0;
+  padding-bottom: 27px;
+}
+
 .example__list {
   @include reset-list-style;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 25px;
+  text-align: center;
 }
 
 .example__value {
+  display: block;
+  padding-bottom: 7px;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
@@ -27,6 +38,7 @@
 }
 
 .example__subtitle {
+  margin: 0;
   font-size: 14px;
   line-height: 12px;
   font-family: $base-font;
@@ -34,9 +46,55 @@
 }
 
 .example__price {
+  margin: 0;
+  padding-bottom: 44px;
   font-weight: 400;
   line-height: 20px;
+  text-align: center;
   font-family: $second-font;
   color: $color-title;
   text-transform: uppercase;
+}
+
+.example__toggle {
+  padding-top: 35px;
+  padding-bottom: 38px;
+}
+
+@media (min-width: $tablet-width) {
+  .example__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .example__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .example__result {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .example__value {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .example__price {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example__text {
+    width: 431px;
+  }
+
+  .example__result {
+    flex-direction: column;
+    width: 400px;
+  }
 }

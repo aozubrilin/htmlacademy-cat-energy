@@ -4,18 +4,22 @@
 <head>
   <meta charset="utf-8">
   <title>CAT ENERGY</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
   <link rel="stylesheet" href="../source/css/style.css">
 </head>
 
 <body>
   <header class="page-header">
-    <div class="page-header__wrapper">
-      <a class="page-header__logo">
-        <img src="https://via.placeholder.com/191x39" class="page-header__logo-image" width="191" height="39"
-          alt="Логотип сайта CAT ENERGY">
-      </a>
+    <div class="page-header__container container">
+      <div class="page-header__top">
+        <a class="page-header__logo">
+          <img src="img/logo-mobile.svg" class="page-header__logo-image" width="191" height="39"
+            alt="Логотип сайта CAT ENERGY">
+        </a>
+        <button class="page-header__toggle" type="button"></button>
+      </div>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
@@ -129,40 +133,50 @@
   </main>
 
   <footer class="page-footer">
-    <div class="page-footer__wrapper">
-      <div class="page-footer__block contacts">
-        <h2 class="contacts__title">приглашаем к сотрудничеству дилеров!</h2>
-        <address class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-        <img src="https://via.placeholder.com/320x400" class="contacts__map" width="320" height="400"
-          alt="Карта нашего расположения">
+    <div class="page-footer__top">
+      <div class="container">
+        <div class="page-footer__contacts">
+          <h2 class="page-footer__contacts-title">приглашаем к сотрудничеству дилеров!</h2>
+          <address class="page-footer__contacts-address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        </div>
       </div>
+    </div>
 
-      <div class="page-footer__block logo">
-        <a href="index.html" class="logo__link">
-          <img src="https://via.placeholder.com/128x24" class="logo__link-image" width="128" height="24"
-            alt="Логотип сайта CAT ENERGY">
-        </a>
-      </div>
+    <div class="page-footer__map">
+      <img src="img/bg-map-mobile@1x.png" class="page-footer__map-img" width="320" height="400"
+        alt="Карта нашего расположения">
+    </div>
 
-      <div class="page-footer__block social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a href="#" class="social__link social__link--vk ">Мы в Вконтакте</a>
-          </li>
-          <li class="social__item">
-            <a href="#" class="social__link social__link--inst ">Мы в Инстаграме</a>
-          </li>
-          <li class="social__item">
-            <a href="#" class="social__link social__link--fb">Мы в Фейсбуке</a>
-          </li>
-        </ul>
-      </div>
 
-      <div class="page-footer__block copyright">
-        <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
-          <p class="copyright__text">HTML Academy</p>
-          <img src="https://via.placeholder.com/100x100" alt="Логотип разработчика сайта" class="copyright__logo">
-        </a>
+    <div class="page-footer__bottom">
+      <div class="page-footer__container container">
+        <div class="page-footer__block logo">
+          <a href="index.html" class="logo__link">
+            <img src="https://via.placeholder.com/128x24" class="logo__link-image" width="128" height="24"
+              alt="Логотип сайта CAT ENERGY">
+          </a>
+        </div>
+
+        <div class="page-footer__block social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a href="#" class="social__link social__link--vk ">Мы в Вконтакте</a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link social__link--inst ">Мы в Инстаграме</a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link social__link--fb">Мы в Фейсбуке</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="page-footer__block copyright">
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
+            <p class="copyright__text">HTML Academy</p>
+            <img src="https://via.placeholder.com/100x100" alt="Логотип разработчика сайта" class="copyright__logo">
+          </a>
+        </div>
       </div>
     </div>
   </footer>
