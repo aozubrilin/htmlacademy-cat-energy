@@ -61,6 +61,12 @@
 }
 
 @media (min-width: $tablet-width) {
+  .catalog__title {
+    font-size: 60px;
+    line-height: 60px;
+    padding-bottom: 74px;
+  }
+
   .catalog__list {
     display: flex;
     flex-wrap: wrap;
