@@ -3,6 +3,8 @@
 }
 
 .page-footer__top {
+  display: flex;
+  padding-top: 28px;
   background-color: white;
 }
 
@@ -14,6 +16,8 @@
 
 .page-footer__contacts-title {
   margin: 0;
+  max-width: 160px;
+  flex-basis: 50%;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -23,6 +27,7 @@
 }
 
 .page-footer__contacts-address {
+  flex-basis: 50%;
   line-height: 20px;
   font-family: $base-font;
   color: $color-text;
@@ -35,6 +40,10 @@
 }
 
 .copyright a {
+  display: flex;
+}
+
+.page-footer__bottom {
   display: flex;
 }
 

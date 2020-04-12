@@ -6,7 +6,7 @@
   <title>CAT ENERGY</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
-  <link rel="stylesheet" href="../source/css/style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -17,9 +17,9 @@
           <img src="img/logo-mobile.svg" class="page-header__logo-image" width="191" height="39"
             alt="Логотип сайта CAT ENERGY">
         </a>
-        <button class="page-header__toggle" type="button"></button>
+        <button class="page-header__toggle page-header__toggle--close" type="button"></button>
       </div>
-      <nav class="main-nav">
+      <nav class="main-nav  main-nav--opened">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
@@ -28,8 +28,8 @@
             <li class="site-list__item">
               <a class="site-list__link" href="catalog.html">Каталог продукции</a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__link site-list__item--active">Подбор программы</a>
+            <li class="site-list__item site-list__item--active">
+              <a class="site-list__link">Подбор программы</a>
             </li>
           </ul>
         </div>
@@ -38,8 +38,9 @@
   </header>
 
   <main class="inner-page">
-    <div class="container">
-      <section class="selection-program">
+
+    <section class="selection-program">
+      <div class="container">
         <div class="selection-program__wrapper">
 
           <h1 class="selection-program__title">Подбор программы</h1>
@@ -137,8 +138,9 @@
             </p>
           </form>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
+
   </main>
 
   <footer class="page-footer">
@@ -189,6 +191,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/main-nav.js"></script>
 </body>
 
 </html>

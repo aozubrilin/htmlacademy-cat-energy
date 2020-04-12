@@ -1,12 +1,13 @@
 .example {
+  display: flex;
   background-color: $bg-color;
-  padding-top: 33px;
-  padding-bottom: 38px;
+  padding-top: 29px;
+  padding-bottom: 33px;
 }
 
 .example__title {
   margin: 0;
-  padding-bottom: 33px;
+  padding-bottom: 35px;
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
@@ -16,33 +17,49 @@
 
 .example__text {
   margin: 0;
-  padding-bottom: 27px;
+  padding-bottom: 25px;
+  width: 95%;
 }
 
 .example__list {
   @include reset-list-style;
   display: flex;
   justify-content: space-between;
-  padding-bottom: 25px;
+  margin-bottom: 33px;
   text-align: center;
+}
+
+.example__item {
+  position: relative;
+  display: block;
+  width: 122px;
+  padding-top: 13px;
+  padding-bottom: 17px;
+  border: 1px solid $border-dark;
+  border-radius: 3px;
 }
 
 .example__value {
   display: block;
-  padding-bottom: 7px;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
   font-family: $second-font;
   color: $color-title;
+  text-transform: uppercase;
 }
 
 .example__subtitle {
+  position: absolute;
+  width: 82px;
+  bottom: -16px;
+  left: 19px;
   margin: 0;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 12px;
   font-family: $base-font;
   color: $color-text;
+  background-color: $btn-gray;
 }
 
 .example__price {
@@ -57,8 +74,7 @@
 }
 
 .example__toggle {
-  padding-top: 35px;
-  padding-bottom: 38px;
+  padding-top: 28px;
 }
 
 @media (min-width: $tablet-width) {
