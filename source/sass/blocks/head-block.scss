@@ -1,16 +1,22 @@
 .head-block {
+  width: 100%;
+  display: flex;
+  padding: 0;
+  padding-top: 27px;
+  padding-bottom: 22px;
   background-image: url("../img/index-background-mobile@1x.jpg");
+  background-size: 100% 305px;
   background-repeat: no-repeat;
-  background-position: center;
-}
-
-.head-block__wrapper {
-  @include container;
-  text-align: center;
+  background-position: center top;
+  align-items: center;
   color: $main-color;
+  text-align: center;
+  border-top: 1px solid $border-lighten;
 }
 
 .head-block__title {
+  margin: 0;
+  margin-bottom: 26px;
   font-size: 36px;
   font-weight: 400;
   line-height: 36px;
@@ -19,15 +25,24 @@
 }
 
 .head-block__text {
+  margin: 0;
+  margin-bottom: 27px;
   line-height: 14px;
   font-family: $second-font;
   text-transform: uppercase;
 }
 
+.head-block__image {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 3px;
+}
+
 .head-block__button {
+  width: 100%;
   color: $main-color;
   background-color: $decorate-color;
-  padding-top: 14px;
+  padding-top: 11px;
   padding-bottom: 11px;
   font-size: 14px;
   line-height: 18px;
@@ -40,5 +55,67 @@
   &:focus {
     background-color: $btn-green-hvr;
     color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .head-block {
+    position: relative;
+    padding-top: 56px;
+    padding-bottom: 200px;
+    background: none;
+    color: $color-title;
+    text-align: left;
+    border: none;
+  }
+
+  .head-block__wrapper {
+    padding-left: 87px;
+  }
+
+  .head-block__title {
+    margin-bottom: 41px;
+    padding: 0;
+    width: 415px;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+  }
+
+  .head-block__text {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .head-block__image {
+    position: absolute;
+    z-index: -1;
+    right: 45%;
+    top: 45%;
+  }
+
+  .head-block__button {
+    padding-top: 17px;
+    padding-bottom: 15px;
+    width: 190px;
+    font-style: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .head-block {
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 50%;
+    z-index: -1;
+  }
+
+  .head-block__image {
+    position: absolute;
+    z-index: -1;
+    left: 40%;
+    top: 45%;
   }
 }

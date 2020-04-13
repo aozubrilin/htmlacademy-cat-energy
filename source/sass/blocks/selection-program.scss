@@ -1,5 +1,5 @@
-.selection-program__wrapper {
-  @include container;
+.selection-program {
+  display: flex;
 }
 
 .selection-program__title {

@@ -4,6 +4,8 @@
 }
 
 .additional-product-list__title {
+  margin: 0;
+  padding-bottom: 15px;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
@@ -11,6 +13,15 @@
   color: $color-lable;
   font-style: normal;
   text-transform: uppercase;
+}
+
+.additional-product-list__item {
+  padding-top: 14px;
+  padding-bottom: 17px;
+}
+
+.additional-product-list__table {
+  padding-bottom: 14px;
 }
 
 .additional-product-list__quantity,

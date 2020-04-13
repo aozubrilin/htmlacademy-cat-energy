@@ -1,0 +1,15 @@
+@media (max-width: 767px) {
+  .main-nav {
+    display: none;
+
+    &--opened {
+      display: block;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    width: 62.2%;
+  }
+}

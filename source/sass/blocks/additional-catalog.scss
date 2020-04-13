@@ -1,8 +1,10 @@
-.additional-catalog__wrapper {
-  @include container;
+.additional-catalog {
+  display: flex;
 }
 
 .additional-catalog__title {
+  margin: 0;
+  padding-bottom: 30px;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
@@ -30,16 +32,43 @@
 }
 
 .additional-catalog__promo {
+  width: 280px;
+  height: 289px;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  width: 280px;
-  height: 289px;
+  background-size: cover;
   text-align: center;
 }
 
 .additional-catalog__promo-text {
+  margin: 0;
   font-size: 16px;
   line-height: 20px;
   color: $main-color;
+}
+
+@media (min-width: $tablet-width) {
+  .additional-product-list__item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .additional-catalog__button {
+    margin-top: 20px;
+    width: 630px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional-catalog__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .additional-catalog__button {
+    margin: 0;
+    width: 245px;
+  }
 }

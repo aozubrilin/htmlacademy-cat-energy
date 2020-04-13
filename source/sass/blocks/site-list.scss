@@ -1,15 +1,23 @@
 .site-list {
   @include reset-list-style;
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 .site-list__link {
+  display: block;
+  margin: 0 -20px;
+  padding-top: 23px;
+  padding-bottom: 22px;
   font-family: $second-font;
-  font-size: 20px;
   font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
   text-transform: uppercase;
   color: $color-link;
   cursor: pointer;
+  border-top: 1px solid $border-lighten;
 
   &[href]:hover {
     color: $link-hvr;
@@ -21,5 +29,43 @@
 
   &[href]:active {
     color: $link-activ;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    display: flex;
+    justify-content: space-between;
+    margin: auto 0;
+    padding: 0;
+  }
+
+  .site-list__item {
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-align: right;
+  }
+
+  .site-list__link {
+    display: block;
+    position: relative;
+    line-height: 25px;
+    font-size: 18px;
+    font-weight: 400;
+    color: $color-lable;
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .site-list__item--active .site-list__link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -9px;
+    width: 100%;
+    height: 2px;
+    background-color: $decorate-color;
   }
 }
