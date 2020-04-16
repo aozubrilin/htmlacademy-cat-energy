@@ -63,7 +63,6 @@
 }
 
 .programs__link {
-  //  padding-top: 1px;
   position: relative;
   font-size: 16px;
   line-height: 16px;
@@ -90,20 +89,30 @@
 }
 
 @media (min-width: $tablet-width) {
+  .programs {
+    padding-bottom: 45px;
+  }
+
   .programs__item {
     margin-bottom: 30px;
-    padding: 80px 62px 62px 52px;
+    padding: 76px 282px 58px 53px;
+
+    &--mass-gain {
+      padding: 76px 315px 58px 53px;
+    }
   }
 
   .programs__title {
-    padding-bottom: 26px;
+    padding-left: 0;
+    margin-bottom: 26px;
     font-size: 36px;
     line-height: 37px;
   }
 
   .programs__description {
     margin: 0;
-    padding-bottom: 61px;
+    margin-bottom: 56px;
+    padding: 0;
     font-size: 16px;
     line-height: 24px;
     border: none;
@@ -113,9 +122,41 @@
     font-size: 20px;
     line-height: 20px;
   }
+
+  .programs__icon {
+    top: 92px;
+    right: 62px;
+    width: 200px;
+    height: 200px;
+    background-color: $decorate-color;
+    border-radius: 50%;
+    margin-left: auto;
+  }
+
+  .programs__icon-svg {
+    position: absolute;
+
+    &--slim {
+      width: 141px;
+      height: 194px;
+      left: 30px;
+      top: -12px;
+    }
+
+    &--mass-gain {
+      width: 268px;
+      height: 113px;
+      left: -34px;
+      bottom: 44px;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .programs {
+    padding-bottom: 73px;
+  }
+
   .programs__list {
     margin: 0;
     display: flex;
@@ -123,18 +164,42 @@
   }
 
   .programs__item {
-    width: 570px;
+    width: 38.2%;
     margin: 0;
-    padding: 41px 56px 62px 52px;
-    box-sizing: border-box;
+    padding: 76px 52px 59px 52px;
   }
 
   .programs__title {
-    text-align: center;
+    padding-left: 162px;
+    margin-bottom: 74px;
   }
 
   .programs__description {
     margin: 0;
-    padding-bottom: 36px;
+    padding-bottom: 31px;
+  }
+
+  .programs__icon {
+    top: 47px;
+    left: 52px;
+    width: 100px;
+    height: 100px;
+    margin: 0;
+  }
+
+  .programs__icon-svg {
+    &--slim {
+      width: 71px;
+      height: 97px;
+      left: 13px;
+      top: -6px;
+    }
+
+    &--mass-gain {
+      width: 134px;
+      height: 57px;
+      left: -18px;
+      bottom: 21px;
+    }
   }
 }

@@ -1,5 +1,6 @@
 .head-block {
   width: 100%;
+  height: auto;
   display: flex;
   padding: 0;
   padding-top: 27px;
@@ -12,6 +13,10 @@
   color: $main-color;
   text-align: center;
   border-top: 1px solid $border-lighten;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+  }
 }
 
 .head-block__title {
@@ -62,7 +67,7 @@
   .head-block {
     position: relative;
     padding-top: 56px;
-    padding-bottom: 200px;
+    padding-bottom: 529px;
     background: none;
     color: $color-title;
     text-align: left;
@@ -83,33 +88,80 @@
   }
 
   .head-block__text {
+    padding-left: 1px;
+    padding-bottom: 21px;
     font-size: 20px;
     line-height: 20px;
   }
 
   .head-block__image {
+    width: 709px;
+    height: 609px;
     position: absolute;
     z-index: -1;
-    right: 45%;
-    top: 45%;
+    right: 3.9%;
+    top: 259px;
   }
 
   .head-block__button {
-    padding-top: 17px;
-    padding-bottom: 15px;
-    width: 190px;
-    font-style: 20px;
+    margin-left: 2px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    width: 245px;
+    font-size: 20px;
     line-height: 20px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .head-block {
-    background-image: url("../img/index-background-desktop@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: 50%;
-    z-index: -1;
+    padding-top: 107px;
+    padding-bottom: 268px;
+
+    .head-block__image {
+      margin: 0;
+      width: 552px;
+      height: 499px;
+      position: absolute;
+      z-index: 1;
+      left: 38.9%;
+      top: 26px;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -115px;
+      left: 50%;
+      width: 50%;
+      height: 696px;
+      background-image: url("../img/index-background-desktop@1x.jpg");
+      background-size: 100% 696px;
+      background-repeat: no-repeat;
+      z-index: -1;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/index-background-desktop@2x.jpg");
+        background-size: cover;
+      }
+    }
+  }
+
+  .head-block__wrapper {
+    padding-left: 80px;
+  }
+
+  .head-block__title {
+    margin-bottom: 42px;
+  }
+
+  .head-block__button {
+    margin: 0;
+  }
+
+  .head-block__text {
+    padding-left: 1px;
+    padding-bottom: 25px;
   }
 
   .head-block__image {

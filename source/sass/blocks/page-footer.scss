@@ -5,6 +5,7 @@
 .page-footer__top {
   display: flex;
   padding-top: 28px;
+  padding-bottom: 26px;
   background-color: white;
 }
 
@@ -16,8 +17,7 @@
 
 .page-footer__contacts-title {
   margin: 0;
-  max-width: 160px;
-  flex-basis: 50%;
+  width: 50%;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -27,16 +27,19 @@
 }
 
 .page-footer__contacts-address {
-  flex-basis: 50%;
+  width: 50%;
   line-height: 20px;
   font-family: $base-font;
   color: $color-text;
   font-style: normal;
 }
 
-.page-footer__map-img {
-  height: 400px;
-  width: 100%;
+.page-footer__map {
+  height: 362px;
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .copyright a {
