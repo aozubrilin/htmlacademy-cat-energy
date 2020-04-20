@@ -1,8 +1,12 @@
 .selection-program {
   display: flex;
+  border-top: 1px solid $border-lighten;
+  padding-top: 15px;
 }
 
 .selection-program__title {
+  margin: 0;
+  margin-bottom: 25px;
   font-weight: 400;
   font-size: 36px;
   line-height: 60px;
@@ -12,6 +16,9 @@
 }
 
 .selection-program__form-text {
+  margin: 0;
+  margin-bottom: 25px;
+  padding-right: 20px;
   font-weight: 400;
   font-family: $second-font;
   color: $color-title;
@@ -41,5 +48,15 @@
   &:focus {
     background-color: $btn-green-hvr;
     color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .selection-program {
+    border: none;
+  }
+
+  .selection-program__wrapper-bottom {
+    display: flex;
   }
 }

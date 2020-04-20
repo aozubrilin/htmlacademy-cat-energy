@@ -164,6 +164,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .example__container {
+    display: flex;
+  }
+
   .example__text {
     width: 431px;
   }
@@ -171,5 +175,11 @@
   .example__result {
     flex-direction: column;
     width: 400px;
+  }
+
+  .example__comparison {
+    width: 590px;
+    margin-left: auto;
+    margin-top: 0;
   }
 }
