@@ -35,6 +35,7 @@
 @media (min-width: $tablet-width) {
   .site-list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin: auto 0;
     padding: 0;
@@ -48,7 +49,6 @@
   }
 
   .site-list__link {
-    display: block;
     position: relative;
     line-height: 25px;
     font-size: 18px;
@@ -67,5 +67,31 @@
     width: 100%;
     height: 2px;
     background-color: $decorate-color;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-list {
+    justify-content: flex-end;
+  }
+
+  .site-list__item {
+    margin-right: 34px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .site-list--index-desktop .site-list__link {
+    color: #ffffff;
+
+    &::after {
+      background-color: $main-color;
+    }
+  }
+
+  .site-list__link {
+    font-size: 20px;
   }
 }

@@ -61,7 +61,12 @@
 }
 
 @media (min-width: $tablet-width) {
+  .instruction {
+    padding-bottom: 51px;
+  }
+
   .instruction__title {
+    padding-bottom: 72px;
     font-size: 60px;
     line-height: 60px;
   }
@@ -69,24 +74,86 @@
   .instruction__list {
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-right: 74px;
   }
 
   .instruction__item {
-    width: 201px;
+    display: flex;
+    margin: 0;
+    padding-bottom: 50px;
+    flex-wrap: wrap;
+    max-width: 250px;
     font-size: 16px;
     line-height: 24px;
 
-    &--item-1,
-    &--item-3 {
-      margin-right: 183px;
+    &--leaf,
+    &--powder {
+      margin-bottom: 83px;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      margin: 0;
+      margin-bottom: 32px;
+      width: 80px;
+      height: 80px;
+      background-color: $decorate-color;
+      background-size: 50px;
+    }
+
+    &::after {
+      position: absolute;
+      font-family: "Oswald", "Arial", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 281px;
+      color: #f2f2f2;
+      z-index: -1;
+    }
+
+    &--leaf::after {
+      content: "1";
+      top: 89px;
+      left: 118px;
+    }
+
+    &--powder::after {
+      content: "2";
+      top: 89px;
+      left: 111px;
+    }
+
+    &--dining::after {
+      top: 90px;
+      left: 113px;
+      content: "3";
+    }
+
+    &--clock::after {
+      content: "4";
+      top: 88px;
+      left: 113px;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
+  .instruction {
+    padding-bottom: 97px;
+  }
+
+  .instruction__list {
+    padding: 0;
+  }
+
   .instruction__item {
+    margin: 0;
+    padding: 0;
     font-size: 16px;
     line-height: 24px;
-    margin-right: 83px;
+    width: 245px;
   }
 }

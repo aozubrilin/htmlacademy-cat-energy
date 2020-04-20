@@ -23,6 +23,18 @@
     }
   }
 
+  &--personal {
+    margin-bottom: 25px;
+  }
+
+  &--programs-block {
+    margin-bottom: 25px;
+  }
+
+  &--contacts-block {
+    margin-bottom: 25px;
+  }
+
   &--comments-block {
     .fields__textarea {
       padding: 0;
@@ -73,11 +85,21 @@
 }
 
 @media (min-width: $tablet-width) {
+  .fields {
+    padding-left: 40px;
+    padding-right: 35px;
+  }
+
   .fields__block {
     &--additional-block {
       .fields__additional-list {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
+      }
+
+      .fields__additional-item {
+        width: 50%;
       }
     }
   }
@@ -90,14 +112,28 @@
       justify-content: space-between;
       flex-direction: row;
     }
+
+    &--personal {
+      width: 40%;
+    }
+
+    &--programs-block {
+      width: 40%;
+    }
+
+    .fields__additional-item {
+      width: auto;
+    }
   }
 
   .fields__info {
     display: flex;
+    justify-content: space-between;
     align-items: center;
   }
 
   .fields__inner {
     display: flex;
+    justify-content: space-between;
   }
 }

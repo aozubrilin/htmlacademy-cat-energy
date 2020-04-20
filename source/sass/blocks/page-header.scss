@@ -59,8 +59,8 @@
 
   .page-header__logo img {
     display: block;
-    width: 172px;
-    height: 57px;
+    width: 174px;
+    height: 59px;
   }
 
   .page-header__toggle {
@@ -69,5 +69,17 @@
 
   .mian-nav {
     display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    padding-top: 55px;
+  }
+
+  .page-header__logo img {
+    display: block;
+    width: 203px;
+    height: 60px;
   }
 }
