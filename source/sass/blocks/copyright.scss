@@ -1,6 +1,16 @@
 .copyright {
+  padding-top: 15px;
+  width: 100%;
+}
+
+.copyright__link {
   display: flex;
-  padding-top: 20px;
+  justify-content: space-between;
+
+  img {
+    width: 28px;
+    height: auto;
+  }
 }
 
 .copyright__text {
@@ -12,5 +22,12 @@
   &:active,
   &:focus {
     color: $copyrigh-link-activ;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    width: auto;
+    padding: 0;
   }
 }
