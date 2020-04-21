@@ -42,10 +42,6 @@
   background-size: cover;
 }
 
-.copyright a {
-  display: flex;
-}
-
 .page-footer__bottom {
   display: flex;
   align-items: center;
@@ -74,11 +70,16 @@
     font-size: 16px;
     text-align: right;
   }
+
+  .page-footer__top {
+    padding: 0;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .page-footer__container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 }

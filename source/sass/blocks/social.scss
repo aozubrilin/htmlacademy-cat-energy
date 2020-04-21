@@ -1,22 +1,36 @@
 .social {
   padding-top: 22px;
-  padding-bottom: 20px;
+  padding-bottom: 17px;
   width: 100%;
   border-bottom: 1px solid $border;
 }
 
 .social__list {
   @include reset-list-style;
-  margin: 0;
+  margin: 0 auto;
+  width: 133px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   text-align: center;
   align-items: center;
+}
+
+.social__link {
+  position: relative;
+
+  &--inst {
+    left: -7px;
+  }
+
+  &--fb {
+    left: -9px;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .social {
     width: auto;
     border: none;
+    padding: 0;
   }
 }
