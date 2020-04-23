@@ -1,16 +1,17 @@
 .copyright {
   padding-top: 15px;
   width: 100%;
+  padding-bottom: 15px;
 }
 
 .copyright__link {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
 
-  img {
-    width: 28px;
-    height: auto;
-  }
+.copyright__link svg {
+  fill: #666666;
 }
 
 .copyright__text {
@@ -29,5 +30,14 @@
   .copyright {
     width: auto;
     padding: 0;
+  }
+
+  .copyright__text {
+    margin-top: 13px;
+    padding-right: 23px;
+  }
+
+  .copyright__link svg {
+    padding-bottom: 2px;
   }
 }
