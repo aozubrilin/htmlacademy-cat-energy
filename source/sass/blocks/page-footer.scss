@@ -6,13 +6,21 @@
   display: flex;
   padding-top: 28px;
   padding-bottom: 27px;
-  background-color: white;
+  background-color: $main-color;
+
+  &--grey {
+    background-color: $bg-color;
+  }
 }
 
 .page-footer__contacts {
   display: flex;
   justify-content: space-between;
   background-color: $main-color;
+
+  &--grey {
+    background-color: $bg-color;
+  }
 }
 
 .page-footer__contacts-title {
@@ -122,6 +130,7 @@
     padding-left: 76px;
     padding-right: 81px;
     box-sizing: border-box;
+    background-color: $main-color;
   }
 
   .page-footer__contacts-address {

@@ -1,11 +1,11 @@
 .additional-product-list {
   @include reset-list-style;
-  margin-bottom: 39px;
+  margin-bottom: 40px;
 }
 
 .additional-product-list__title {
   margin: 0;
-  padding-bottom: 15px;
+  padding-bottom: 14px;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
@@ -16,17 +16,140 @@
 }
 
 .additional-product-list__item {
-  padding-top: 14px;
+  padding-top: 13px;
   padding-bottom: 17px;
+  border-top: 1px solid $border-dark;
 }
 
 .additional-product-list__table {
-  padding-bottom: 14px;
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 14px;
 }
 
 .additional-product-list__quantity,
 .additional-product-list__price {
+  padding: 0;
   line-height: 14px;
   color: $color-text;
   font-style: normal;
+}
+
+.additional-product-list__price {
+  text-align: right;
+}
+
+.additional-product__button {
+  width: 100%;
+  color: $main-color;
+  background-color: $decorate-color;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 16px;
+  line-height: 20px;
+
+  &:hover {
+    background-color: $btn-green-hvr;
+  }
+
+  &:active,
+  &:focus {
+    background-color: $btn-green-hvr;
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .additional-product-list {
+    border-left: 1px solid $border-dark;
+    border-right: 1px solid $border-dark;
+    border-bottom: 1px solid $border-dark;
+    margin-bottom: 70px;
+  }
+
+  .additional-product-list__item {
+    padding-top: 26px;
+    padding-left: 37px;
+    padding-right: 36px;
+    padding-bottom: 26px;
+  }
+
+  .additional-product-list__title {
+    padding-bottom: 0;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .additional-product-list__quantity,
+  .additional-product-list__price {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .additional-product-list__price {
+    width: 50px;
+  }
+
+  .additional-product-list__quantity {
+    padding-right: 45px;
+    width: 135px;
+    text-align: right;
+  }
+
+  .additional-product-list__table {
+    width: auto;
+    margin: 0;
+    margin-top: 4px;
+  }
+
+  .additional-product__button {
+    margin-top: 22px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional-catalog {
+    margin-bottom: 86px;
+  }
+
+  .additional-product-list {
+    width: 73.4%;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid $border-dark;
+    margin: 0;
+  }
+
+  .additional-product-list__item {
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    padding-top: 15px;
+    padding-bottom: 16px;
+  }
+
+  .additional-product__button {
+    margin: 0;
+    width: 245px;
+  }
+
+  .additional-product-list__quantity {
+    width: 135px;
+    text-align: left;
+  }
+
+  .additional-product-list__title {
+    width: 160px;
+  }
+
+  .additional-product-list__table {
+    width: 285px;
+    margin-left: auto;
+    margin-right: 40px;
+    margin-top: 8px;
+  }
+
+  .additional-product-list__table--water .additional-product-list__price {
+    padding-right: 6px;
+  }
 }

@@ -2,7 +2,7 @@
   display: flex;
   padding-top: 16px;
   padding-bottom: 25px;
-  margin-bottom: 31px;
+  margin-bottom: 29px;
   border-top: 1px solid $border-lighten;
   border-bottom: 1px solid $border-lighten;
 }
@@ -12,6 +12,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.catalog__food-all img {
+  opacity: 0.2;
 }
 
 .catalog__title {
@@ -31,7 +35,7 @@
 
 .catalog__subtitle {
   margin: 0;
-  padding-top: 22px;
+  padding-top: 18px;
   padding-bottom: 9px;
   font-weight: 400;
   font-size: 16px;
@@ -74,6 +78,8 @@
 @media (min-width: $tablet-width) {
   .catalog {
     border: none;
+    padding-bottom: 0;
+    margin-bottom: 17px;
   }
 
   .catalog__title {
@@ -130,6 +136,12 @@
 }
 
 @media (min-width: $desktop-width) {
+  .catalog {
+    border: none;
+    padding-bottom: 0;
+    margin-bottom: 22px;
+  }
+
   .catalog__title {
     padding-top: 57px;
     margin-bottom: 75px;
