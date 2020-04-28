@@ -118,14 +118,18 @@
     padding-top: 107px;
     padding-bottom: 268px;
 
+    .head-block__wrapper {
+      position: relative;
+    }
+
     .head-block__image {
+      position: absolute;
       margin: 0;
       width: 552px;
       height: 499px;
-      position: absolute;
       z-index: 1;
-      left: 38.9%;
-      top: 26px;
+      left: 36.9%;
+      top: -80px;
     }
 
     &::after {
