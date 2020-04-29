@@ -1,15 +1,23 @@
 .copyright {
   padding-top: 15px;
   width: 100%;
+  padding-bottom: 15px;
 }
 
 .copyright__link {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  fill: #666666;
 
-  img {
-    width: 28px;
-    height: auto;
+  &:hover,
+  :focus {
+    fill: $decorate-color;
+  }
+
+  &:active {
+    fill: $decorate-color;
+    opacity: 0.3;
   }
 }
 
@@ -29,5 +37,14 @@
   .copyright {
     width: auto;
     padding: 0;
+  }
+
+  .copyright__text {
+    margin-top: 13px;
+    padding-right: 23px;
+  }
+
+  .copyright__link svg {
+    padding-bottom: 2px;
   }
 }

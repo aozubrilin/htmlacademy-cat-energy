@@ -113,6 +113,7 @@
   text-transform: uppercase;
   border: none;
   cursor: pointer;
+  outline: none;
 }
 
 .exemple__range {
@@ -137,18 +138,32 @@
 }
 
 @media (min-width: $tablet-width) {
+  .example {
+    border-top: 1px solid $border-light;
+    background: linear-gradient(to top, $btn-gray 462px, $main-color 462px);
+  }
+
+  .example__wrapper {
+    margin-bottom: 77px;
+  }
+
   .example__title {
+    padding-top: 15px;
+    padding-bottom: 64px;
     font-size: 60px;
     line-height: 60px;
   }
 
   .example__text {
+    width: 97%;
     font-size: 16px;
     line-height: 24px;
+    padding-bottom: 53px;
   }
 
   .example__result {
     display: flex;
+    align-items: center;
     justify-content: space-between;
   }
 
@@ -157,19 +172,173 @@
     line-height: 37px;
   }
 
+  .example__item {
+    margin-right: 42px;
+    width: 160px;
+    padding-top: 15px;
+    padding-bottom: 18px;
+  }
+
   .example__price {
+    width: 192px;
+    padding-top: 3px;
+    text-align: right;
     font-size: 20px;
-    line-height: 20px;
+    line-height: 29px;
+  }
+
+  .example__subtitle {
+    position: absolute;
+    white-space: nowrap;
+    font-size: 14px;
+    line-height: 14px;
+    bottom: -7px;
+    background-color: $main-color;
+
+    &--weight {
+      width: 114px;
+      left: 23px;
+    }
+
+    &--time {
+      width: 140px;
+      left: 9px;
+    }
+  }
+
+  .example__comparison {
+    width: 690px;
+    height: 570px;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .example__image {
+    background-repeat: no-repeat;
+    position: relative;
+
+    &--before {
+      width: 676px;
+      height: 499px;
+      background-image: url("../img/before-desktop@1x.png");
+      margin-top: -16px;
+      left: 1%;
+    }
+
+    &--after {
+      width: 596px;
+      height: 517px;
+      background-image: url("../img/after-desktop@1x.png");
+      margin-top: -25px;
+      left: 1%;
+    }
+  }
+
+  .example__toggles {
+    position: relative;
+    padding-top: 28px;
+    width: 587px;
+  }
+
+  .example__toggle {
+    position: relative;
+    font-size: 20px;
+    width: 66px;
+
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 13%;
+      bottom: -5px;
+      border-bottom: 1px dotted #111111;
+      width: 75%;
+      height: 1px;
+      opacity: 0.23;
+    }
+
+    &:hover::after,
+    &:focus::after {
+      border-bottom: 1px solid #111111;
+    }
+
+    &:active::after {
+      border: none;
+    }
+  }
+
+  .exemple__range {
+    box-sizing: border-box;
+    width: 428px;
+    height: 6px;
+    border: none;
+    background-color: #dcdcdc;
+  }
+
+  .exemple__range-input {
+    display: none;
+  }
+
+  .exemple__range-toggle {
+    position: absolute;
+    top: 22px;
+    left: 75px;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: $main-color;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+    border: solid 1px $border-dark;
+    box-sizing: border-box;
+    outline: none;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 8px;
+      height: 8px;
+      top: 12px;
+      left: 12px;
+      border-radius: 50%;
+      background-color: $decorate-color;
+    }
+
+    &:hover {
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    &:active {
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
+      border: solid 2px $decorate-color;
+      box-sizing: border-box;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
+  .example {
+    border: none;
+    padding-bottom: 27px;
+  }
+
   .example__container {
     display: flex;
   }
 
+  .example__wrapper {
+    margin: 0;
+    margin-right: 167px;
+  }
+
+  .example__title {
+    border: none;
+    padding: 0;
+    margin-bottom: 146px;
+  }
+
   .example__text {
     width: 431px;
+    padding-bottom: 68px;
   }
 
   .example__result {
@@ -177,9 +346,50 @@
     width: 400px;
   }
 
+  .example__subtitle {
+    background-color: $btn-gray;
+  }
+
+  .example__list {
+    margin-left: 8px;
+  }
+
   .example__comparison {
     width: 590px;
     margin-left: auto;
     margin-top: 0;
+  }
+
+  .example__price {
+    width: 100%;
+    display: flex;
+    padding-top: 23px;
+  }
+
+  .example__price-text {
+    margin-right: 64px;
+  }
+
+  .example__image {
+    background-repeat: no-repeat;
+    position: relative;
+
+    &--before {
+      margin-top: -46px;
+    }
+
+    &--after {
+      margin-top: -55px;
+    }
+  }
+
+  .example__toggles {
+    padding-top: 49px;
+    padding-left: 49px;
+  }
+
+  .exemple__range-toggle {
+    top: 43px;
+    left: 126px;
   }
 }
