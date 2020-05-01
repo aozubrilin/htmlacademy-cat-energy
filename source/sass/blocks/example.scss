@@ -78,13 +78,13 @@
   height: 240px;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: auto 240px;
 
   &--before {
     background-image: url("../img/before-mobile@1x.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/before-mobile@2x.png");
+      background-size: auto 240px;
     }
   }
 
@@ -94,6 +94,7 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/after-mobile@2x.png");
+      background-size: auto 240px;
     }
   }
 }
