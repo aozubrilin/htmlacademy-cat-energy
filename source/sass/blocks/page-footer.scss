@@ -112,8 +112,8 @@
     height: 400px;
     background-image: url("../img/map-pin.png"),
       url("../img/bg-map-tablet@1x.png");
-    background-position: center 146px, center -3px;
-    background-size: 113px 106px, auto 400px;
+    background-position: center 146px, center;
+    background-size: 113px 106px, 100% 400px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/map-pin.png"), url("../img/bg-map-tablet@2x.png");
