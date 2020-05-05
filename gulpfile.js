@@ -48,14 +48,14 @@ gulp.task("images", function () {
         imagemin.svgo(),
       ])
     )
-    .pipe(gulp.dest("source/img"));
+    .pipe(gulp.dest("build/img"));
 });
 
 gulp.task("webp", function () {
   return gulp
     .src("source/img/**/*.{png,jpg}")
     .pipe(webp({ quality: 90 }))
-    .pipe(gulp.dest("source/img"));
+    .pipe(gulp.dest("build/img"));
 });
 
 gulp.task("sprite", function () {
@@ -124,6 +124,8 @@ gulp.task("build", gulp.series(
   "copy",
   "css",
   "scripts",
+  "images",
+  "webp",
   "sprite",
   "html"
 ));
