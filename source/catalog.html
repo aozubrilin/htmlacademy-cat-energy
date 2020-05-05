@@ -10,10 +10,13 @@
     document.createElement("picture");
   </script>
   <script src="js/picturefill.js" async></script>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css" />
 </head>
 
 <body>
+  <div style="display: none;">
+    <include src="build/img/sprite.svg"></include>
+  </div>
   <header class="page-header">
     <div class="page-header__container container">
       <div class="page-header__top">
@@ -406,7 +409,7 @@
           </ul>
           <div class="additional-catalog__promo">
             <svg width="56" height="61">
-              <use xlink:href="img/icons-sprite.svg#gift"></use>
+              <use xlink:href="#icon-gift"></use>
             </svg>
             <p class="additional-catalog__promo-text">Закажите все и&nbsp;получите чехол для кота в подарок!</p>
           </div>
@@ -452,21 +455,21 @@
               <li class="social__item">
                 <a href="#" class="social__link social__link--vk" aria-label="Вконтакте">
                   <svg width="22" height="12">
-                    <use xlink:href="img/icons-sprite.svg#icon-vk"></use>
+                    <use xlink:href="#icon-vk"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
                 <a href="#" class="social__link social__link--inst" aria-label="Игстаграм">
                   <svg width="17" height="17">
-                    <use xlink:href="img/icons-sprite.svg#icon-inst"></use>
+                    <use xlink:href="#icon-insta"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
                 <a href="#" class="social__link social__link--fb" aria-label="Фейсбук">
                   <svg width="10" height="19">
-                    <use xlink:href="img/icons-sprite.svg#icon-fb"></use>
+                    <use xlink:href="#icon-fb"></use>
                   </svg>
                 </a>
               </li>
@@ -477,7 +480,7 @@
             <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
               <p class="copyright__text">HTML Academy</p>
               <svg class="copyright__icon" width="27" height="34">
-                <use xlink:href="img/icons-sprite.svg#copyright-icon"></use>
+                <use xlink:href="#htmlacademy"></use>
               </svg>
             </a>
           </div>
