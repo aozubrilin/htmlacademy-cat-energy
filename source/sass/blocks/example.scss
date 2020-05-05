@@ -145,6 +145,11 @@
   height: 6px;
   border-radius: 10px;
   background-color: $decorate-color;
+  transition-duration: 0.5s;
+
+  &--after {
+    margin-left: 35px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -312,6 +317,11 @@
     border: solid 1px $border-dark;
     box-sizing: border-box;
     outline: none;
+
+
+    &--after {
+      margin-left: 400px;
+    }
 
     &::after {
       position: absolute;
