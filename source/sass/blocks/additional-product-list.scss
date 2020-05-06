@@ -39,7 +39,7 @@
   text-align: right;
 }
 
-.additional-product__button {
+.additional-product-list__button {
   width: 100%;
   color: $main-color;
   background-color: $decorate-color;
@@ -102,7 +102,7 @@
     margin-top: 4px;
   }
 
-  .additional-product__button {
+  .additional-product-list__button {
     margin-top: 22px;
   }
 }
@@ -128,7 +128,7 @@
     padding-bottom: 16px;
   }
 
-  .additional-product__button {
+  .additional-product-list__button {
     margin: 0;
     width: 245px;
   }
